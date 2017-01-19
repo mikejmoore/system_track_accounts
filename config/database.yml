@@ -1,0 +1,33 @@
+
+development:
+  adapter: mysql2
+  database: system_track_acct_dev
+  pool: 5
+  timeout: 5000
+  persistence: :db
+
+docker:
+  adapter: mysql2
+  database: system_track_acct
+  pool: 5
+  timeout: 5000
+  persistence: :db
+  host: localhost
+  port: 3310
+
+
+test:
+  adapter:  mysql2
+  database: system_track_acct_test
+  persistence: :db
+  pool: 5
+  host: localhost
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  database: system_track_acct
+  pool: 20
+  timeout: 5000
+  persistence: :db
+
